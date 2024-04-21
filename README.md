@@ -1,2 +1,1 @@
-# java_lab_FE
-Lab work for Additional Java
+## Backend - https://github.com/hnoievets/java_lab
