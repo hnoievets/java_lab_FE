@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoriaParser</title>
+  <script type="module" defer src="/main.js"></script>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>AutoriaParser</h1>
+  <form id="searchForm" action="">
+    <div>
+      <label for="brand">Brand:
+        <input type="text" required id="brand" name="brand">
+      </label>
+      <label for="model">Model:
+        <input type="text" id="model" name="model">
+      </label>
+      <label for="year">Year:
+        <input type="text" id="year" name="year">
+      </label>
+      <label for="limit">Limit:
+        <input type="number" id="limit" value="20" name="limit" min="1">
+      </label>
+    </div>
+    <input type="submit" value="Search" />
+  </form>
+  
+  <div id="content">
+    <div id="searchHistory">
+      <h3>Останній пошук</h3>
+      <ul id="searchHistoryList"></ul>
+    </div>
+    <a hidden id="downloadExcel" href="#" download>
+      <div>
+        <img 
+          src="/public/excel.jpg" 
+          alt="excel logo"
+        >
+        Завантажити
+      </div>
+    </a>
+    <div id="cars-info">
+      <h1 id="contentHeader">Тут будуть знайдені авто</h1>
+      <ul id="results"></ul>
+  </div>
+  </div>
+</body>
+</html>

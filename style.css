@@ -1,0 +1,153 @@
+
+body, h1, form, input, label, ul, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+form {
+  margin: auto;
+  width: 500px;
+  text-align: end;
+}
+
+form > div{
+  max-width: 600px;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+label {
+  width: 200px;
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="submit"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#cars-info h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.columns {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 0 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.column li span {
+  font-weight: bold;
+  color: #666;
+}
+
+.column a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.column a:hover {
+  text-decoration: underline;
+}
+
+.block {
+  display: block;
+}
+
+#downloadExcel {
+  position: relative;
+  bottom: -80px;
+  left: 700px;
+  width: min-content;
+
+  div {
+    width: max-content;
+
+    img {
+      display: block;
+      height: 40px; 
+      width: 40px; 
+      margin: auto; 
+    }
+  }
+}
+
+#searchHistory {
+  text-align: center;
+  position: absolute;
+  right: 40px;
+  top: 80px;
+  background-color: rgb(183, 192, 196);
+  border-radius: 20px;
+  width: 200px;
+  padding: 20px;
+
+  li {
+    cursor: pointer;
+    background-color: white;
+    border-radius: 20px;
+    user-select: none;
+  }
+
+  li:hover{
+    color: #000;
+    background-color: #d4cbcb;
+  }
+}
